@@ -11,6 +11,7 @@
     "@nx/react": "^21.4.1",
     "@nx/web": "21.4.1",
     "@nx/webpack": "21.4.1",
+    "@nxrocks/nx-spring-boot": "^11.0.1",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
     "@svgr/webpack": "^8.0.1",
     "@swc-node/register": "~1.9.1",
