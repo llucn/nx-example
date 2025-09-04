@@ -3,6 +3,7 @@
 import NxWelcome from './nx-welcome';
 
 import { Route, Routes, Link } from 'react-router-dom';
+import { NxExampleImageEditor } from '@nx-example/image-editor';
 
 export function App() {
   return (
@@ -40,6 +41,7 @@ export function App() {
           element={
             <div>
               <Link to="/">Click here to go back to root page.</Link>
+              <NxExampleImageEditor />
             </div>
           }
         />
