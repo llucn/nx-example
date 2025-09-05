@@ -1,20 +1,32 @@
 # NxExample
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+## 开发环境
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
-
-[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/js?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
-
-## Finish your CI setup
-
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/HaalNrfiWU)
-
+- JDK 17
+- Node 22
 
 ## Generate a library
 
 ```sh
 npx nx g @nx/js:lib packages/pkg1 --publishable --importPath=@my-org/pkg1
+```
+
+## 创建 React App
+
+```sh
+npx nx g @nx/react:app packages/my-new-app
+```
+
+## 创建 React Library
+
+```sh
+npx nx g @nx/react:lib packages/my-new-lib
+```
+
+## 创建 Spring Boot App
+
+```sh
+npx nx g @nxrocks/nx-spring-boot:project packages/project-name
 ```
 
 ## Run tasks
@@ -34,6 +46,40 @@ npx nx <target> <project-name>
 These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
 
 [More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+
+编译某个项目:
+
+```sh
+npx nx build project-name
+```
+
+编译所有项目:
+
+```sh
+npx nx run-many -t build
+```
+
+运行某个项目:
+
+```sh
+npx nx serve project-name
+```
+
+运行所有项目:
+
+```sh
+npx nx run-many -t serve
+```
+
+<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+
+✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+
+[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/js?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+
+## Finish your CI setup
+
+[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/HaalNrfiWU)
 
 ## Versioning and releasing
 
