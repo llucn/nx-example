@@ -8,6 +8,9 @@
     },
     {
       "path": "./packages/image-editor"
+    },
+    {
+      "path": "./packages/ui-vue"
     }
   ]
 }
